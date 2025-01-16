@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    android:background="#abcdef">
+    <TextView
+        android:id="@+id/lastNameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Фамилия"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemIconDeleteIV"
+        app:layout_constraintHorizontal_bias="0" />
+
+    <TextView
+        android:id="@+id/numberTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Номер"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTV"
+        app:layout_constraintEnd_toStartOf="@+id/itemIconDeleteIV"
+        app:layout_constraintHorizontal_bias="0" />
+
+    <TextView
+        android:id="@+id/itemTimesTampTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTV"
+        app:layout_constraintEnd_toStartOf="@+id/itemIconDeleteIV"
+        android:text="12:00" />
+
+    <ImageView
+        android:id="@+id/itemIconDeleteIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:src="@drawable/baseline_cancel_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lastNameTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>
